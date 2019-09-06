@@ -1,12 +1,15 @@
-# easyasn
+# EasyAsn
 
 ## Features
-1. Easy to use (that is why we call it easyasn)
+1. Easy to use (that is why we call it __EasyAsn__)
 2. Automatically generate codec source codes (C style only for the moment)
 3. Automatically generate dummy test source codes
 4. Automatically generate wireshark-like message dumpping codes (for trouble-shootings)
 
 ## Quick Start
+0. Prerequisite
+   >> Any Linux style system with gcc 4.3.0 or above.
+   
 1. Clone project to local folder, saying /workings/tmp/easyasn_ngap
   
    __NOTE__: Do not change the sub folders' structure.
