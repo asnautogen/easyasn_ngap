@@ -2,7 +2,7 @@
 
 ## Features
 1. Easy to use (that is why we call it __EasyAsn__)
-2. Automatically generate codec source codes (C style only for the moment)
+2. Automatically generate codec source codes (C style only for the moment) for 3GPP NGAP, S1AP, X2AP, XNAP etc.
 3. Automatically generate dummy test source codes
 4. Automatically generate wireshark-like message dumpping codes (for trouble-shootings)
 
