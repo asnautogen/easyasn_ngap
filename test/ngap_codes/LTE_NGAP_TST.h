@@ -5,11 +5,11 @@
    - ASN Constants file: ./ngap_asn/ngap-const-0.8.0.asn
    - ASN Main file:      ./ngap_asn/ngap-main-1.0.0.asn
 
-  Author: Bidtem
+  Author: EasyAsn Team
 
   Communication And Support:
     For any extended use or support, please contact the author via email:
-      deskzhcc@sina.com
+      easyasn@sina.com
     Or join EasyAsn at:
       QQ: 3115974651
 */
