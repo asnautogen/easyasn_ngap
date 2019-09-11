@@ -1,0 +1,107 @@
+
+======================== Round 1 =====================
+
+>>>>>>> BEGIN TEST HandoverRequestAcknowledge  >>>>>>>>>>>>
+NG Application Protocol
+   NGAP-ELEMENTARY-PROCEDURE-PDU: successfulOutcome (1)
+      successfulOutcome
+         procedureCode: id-HandoverResourceAllocation (13)
+         criticality: reject (0)
+         value
+            HandoverRequestAcknowledge
+               protocolIEs: 6 items
+               Item 0: id-AMF-UE-NGAP-ID
+                  ProtocolIE-Field
+                     id: id-AMF-UE-NGAP-ID (12)
+                     criticality: ignore (1)
+                     value
+                        AMF-UE-NGAP-ID: 2147483647
+               Item 1: id-RAN-UE-NGAP-ID
+                  ProtocolIE-Field
+                     id: id-RAN-UE-NGAP-ID (91)
+                     criticality: ignore (1)
+                     value
+                        RAN-UE-NGAP-ID: 2147483647
+               Item 2: id-PDUSessionResourceAdmittedList
+                  ProtocolIE-Field
+                     id: id-PDUSessionResourceAdmittedList (53)
+                     criticality: ignore (1)
+                     value
+                        PDUSessionResourceAdmittedList: 1 item
+                              Item 0: id-PDUSessionResourceAdmittedItem
+                                 ProtocolIE-SingleContainer
+                                    id: id-PDUSessionResourceAdmittedItem (52)
+                                    criticality: ignore (1)
+                                    value
+                                       pDUSessionID: 127
+                                       dL-NGU-UP-TNLInformation: gTPTunnel (0)
+                                          transportLayerAddress: 818183838585878789898b8b8d8d8f8f91919393 [bit length 160]
+                                          gTP-TEID: 55660077
+                                       dLForwardingUP-TNLInformation: gTPTunnel (0)
+                                          transportLayerAddress: 818183838585878789898b8b8d8d8f8f91919393 [bit length 160]
+                                          gTP-TEID: 55660077
+                                       integrityProtectionResult: not-performed (1)
+                                       confidentialityProtectionResult: not-performed (1)
+                                       qosFlowSetupResponseList: 1 item
+                                          Item 0
+                                             qosFlowIndicator: 31
+                                             dataForwardingAccepted: Unknown (1)
+                                       qosFlowFailedToSetupList: 1 item
+                                          Item 0
+                                             qosFlowIndicator: 31
+                                             cause: radioNetwork (0)
+                                                radioNetwork: txnrelocoverall-expiry (1)
+                                       dataForwardingResponseDRBList: 1 item
+                                          Item 0
+                                             dRB-ID: 16
+                                             dLForwardingUP-TNLInformation: gTPTunnel (0)
+                                                transportLayerAddress: 818183838585878789898b8b8d8d8f8f91919393 [bit length 160]
+                                                gTP-TEID: 55660077
+                                             uLForwardingUP-TNLInformation: gTPTunnel (0)
+                                                transportLayerAddress: 818183838585878789898b8b8d8d8f8f91919393 [bit length 160]
+                                                gTP-TEID: 55660077
+               Item 3: id-PDUSessionResourceFailedToSetupList
+                  ProtocolIE-Field
+                     id: id-PDUSessionResourceFailedToSetupList (55)
+                     criticality: ignore (1)
+                     value
+                        PDUSessionList: 1 item
+                           Item 0
+                              pDUSessionID: 127
+                              cause: transport (1)
+                                 transport: unspecified (1)
+               Item 4: id-TargetToSource-TransparentContainer
+                  ProtocolIE-Field
+                     id: id-TargetToSource-TransparentContainer (113)
+                     criticality: reject (0)
+                     value
+                        TargetToSource-TransparentContainer: 01
+               Item 5: id-CriticalityDiagnostics
+                  ProtocolIE-Field
+                     id: id-CriticalityDiagnostics (20)
+                     criticality: ignore (1)
+                     value
+                        procedureCode: 127
+                        triggeringMessage: successful-outcome (1)
+                        procedureCriticality: ignore (1)
+                        iEsCriticalityDiagnostics: 1 item
+                           Item 0
+                              iECriticality: ignore (1)
+                              iE-ID: 32767
+                              typeOfError: missing (1)
+  + Encoding OK     (length = 178):
+
+0000   20 0d 00 80 ad 00 00 06 00 0c 40 05 c0 7f ff ff 
+0010   ff 00 5b 40 05 c0 7f ff ff ff 00 35 40 7a 00 00 
+0020   34 40 75 00 7f 72 78 27 c0 81 81 83 83 85 85 87 
+0030   87 89 89 8b 8b 8d 8d 8f 8f 91 91 93 93 55 66 00 
+0040   77 09 f0 81 81 83 83 85 85 87 87 89 89 8b 8b 8d 
+0050   8d 8f 8f 91 91 93 93 55 66 00 77 14 04 7e 00 00 
+0060   f8 01 03 1e 13 e0 81 81 83 83 85 85 87 87 89 89 
+0070   8b 8b 8d 8d 8f 8f 91 91 93 93 55 66 00 77 09 f0 
+0080   81 81 83 83 85 85 87 87 89 89 8b 8b 8d 8d 8f 8f 
+0090   91 91 93 93 55 66 00 77 00 37 40 04 00 00 7f 14 
+00A0   00 71 00 02 01 01 00 14 40 08 78 7f 50 00 10 7f 
+00B0   ff 40 
+  + Decoding OK     (ret = 178)
+>>>>>>> END TEST HandoverRequestAcknowledge  OK >>>>>>>>>>>>

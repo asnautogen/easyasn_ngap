@@ -1,0 +1,85 @@
+NGAP-ELEMENTARY-PROCEDURE ::= CLASS {
+	&InitiatingMessage				,
+	&SuccessfulOutcome							OPTIONAL,
+	&UnsuccessfulOutcome						OPTIONAL,
+	&procedureCode				ProcedureCode 	UNIQUE,
+	&criticality				Criticality 	DEFAULT ignore
+}
+
+WITH SYNTAX {
+	INITIATING MESSAGE			&InitiatingMessage
+	[SUCCESSFUL OUTCOME			&SuccessfulOutcome]
+	[UNSUCCESSFUL OUTCOME		&UnsuccessfulOutcome]
+	PROCEDURE CODE				&procedureCode
+	[CRITICALITY				&criticality]
+}
+
+NGAP-PROTOCOL-IES ::= CLASS {
+	&id				ProtocolIE-ID 					UNIQUE,
+	&criticality	Criticality,
+	&Value,
+	&presence		Presence
+}
+WITH SYNTAX {
+	ID				&id
+	CRITICALITY		&criticality
+	TYPE			&Value
+	PRESENCE		&presence
+}
+
+NGAP-PROTOCOL-IES-PAIR ::= CLASS {
+	&id					ProtocolIE-ID 				UNIQUE,
+	&firstCriticality	Criticality,
+	&FirstValue,
+	&secondCriticality	Criticality,
+	&SecondValue,
+	&presence			Presence
+}
+WITH SYNTAX {
+	ID						&id
+	FIRST CRITICALITY		&firstCriticality
+	FIRST TYPE				&FirstValue
+	SECOND CRITICALITY		&secondCriticality
+	SECOND TYPE				&SecondValue
+	PRESENCE				&presence
+}
+
+-- **************************************************************
+--
+-- Class Definition for Protocol Extensions
+--
+-- **************************************************************
+
+NGAP-PROTOCOL-EXTENSION ::= CLASS {
+	&id				ProtocolExtensionID			UNIQUE,
+	&criticality	Criticality,
+	&Extension,
+	&presence		Presence
+}
+WITH SYNTAX {
+	ID				&id
+	CRITICALITY		&criticality
+	EXTENSION		&Extension
+	PRESENCE		&presence
+}
+
+-- **************************************************************
+--
+-- Class Definition for Private IEs
+--
+-- **************************************************************
+
+NGAP-PRIVATE-IES ::= CLASS {
+	&id				PrivateIE-ID,
+	&criticality	Criticality,
+	&Value,
+	&presence		Presence
+}
+WITH SYNTAX {
+	ID				&id
+	CRITICALITY		&criticality
+	TYPE			&Value
+	PRESENCE		&presence
+}
+
+
