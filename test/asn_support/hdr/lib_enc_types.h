@@ -1,6 +1,6 @@
 /*
  *  Author:
- *    Charlie Zhuo <emailto:deskzhcc@sina.com>
+ *    EasyAsn Team <easyasn@sina.com>
  *  Copyright Notice:
  *    The information contained herein is confidential and the property of
  *    the author and is supplied without liability for errors or omissions.
@@ -9,8 +9,7 @@
  *    restriction on reproduction and use extend to all media in which the
  *    information may be embodied.
  *  Communication And Support:
- *    For any extended use or support, please contact the author via email:
- *     deskzhcc@sina.com
+ *    For any extended use or support, please contact the author via email.
  */
 
 #ifndef _TST_TYPES_HDR_
