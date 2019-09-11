@@ -9,7 +9,7 @@
 
   Communication And Support:
     For any extended use or support, please contact the author via email:
-      deskzhcc@sina.com
+      easyasn@sina.com
     Or join EasyAsn at:
       QQ: 3115974651
 */
